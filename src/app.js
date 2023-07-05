@@ -47,10 +47,11 @@ connectMongo();
 
 const server = httpServer.listen(PORT, () =>
   console.log(
-    `Server started on port ${PORT}. at ${new Date().toLocaleString()}`
+    `Server started on port ${PORT}`
   )
 );
 server.on("error", (err) => console.log(err));
+
 
 /*-------SESSION-------------*/
 app.use(
